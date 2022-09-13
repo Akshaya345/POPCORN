@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+div.spinner {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    position: sticky;
+    top: 0;
+}
+
+.router-link-exact-active {
+    font-weight: 900;
+    color: white;
+}
+
+.main-nav a button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-layout {
+    display: grid;
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    grid-template-rows: auto auto 1fr auto auto;
+    width: 100%;
+    /* gap: 5px; */
+}
+
+.sidebar-container {
+    min-width: 250px;
+}
+
+img.trending-poster {
+    width: 145px;
+}
+
+img.search-poster:hover {
+    transform: scale(1.02);
+}
+
+.feed-container, .single-post-container, .search-container, .mylist-container {
+    max-width: 600px;
+    width: 600px;
+    flex-grow: 1;
+    margin-bottom: 5rem;
+}
+
+main.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.left-wrapper {
+    position: sticky;
+    top: 1rem;
+}
+
+div.field {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: flex-start;
+    margin-block: 2rem;
+}
+
+button.ui.orange.inverted.button {
+    margin: 2px;
+}
+
+div.content {
+    margin: 0.5rem;
+    color: grey;
+}
+
+#error {
+    text-align: center;
+}
+
+.popular-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hashtag-container {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+nav a {
+    color: #a4a5a5;
+}
+
+nav a:hover {
+    color: rgb(253, 99, 99);
+}
+
+a {
+    color: rgb(253, 99, 99);
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 800px) {
+    .feed-container, .search-container, .mylist-container {
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+}
